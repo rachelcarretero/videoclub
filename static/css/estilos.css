@@ -1,0 +1,12 @@
+body {
+    background-color: #e0f7f5; /* verde agua claro */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+a.nav-link:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
