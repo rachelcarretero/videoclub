@@ -1,0 +1,199 @@
+[
+    {
+        "model": "catalogo.genero",
+        "pk": 1,
+        "fields": {
+            "nombre": "Acción"
+        }
+    },
+    {
+        "model": "catalogo.genero",
+        "pk": 2,
+        "fields": {
+            "nombre": "Comedia"
+        }
+    },
+    {
+        "model": "catalogo.genero",
+        "pk": 3,
+        "fields": {
+            "nombre": "Ciencia Ficción"
+        }
+    },
+    {
+        "model": "catalogo.genero",
+        "pk": 4,
+        "fields": {
+            "nombre": "Drama"
+        }
+    },
+    {
+        "model": "catalogo.genero",
+        "pk": 5,
+        "fields": {
+            "nombre": "Aventura"
+        }
+    },
+    {
+        "model": "catalogo.pelicula",
+        "pk": 1,
+        "fields": {
+            "titulo": "Inception",
+            "descripcion": "Un ladrón habilidoso entra en los sueños de las personas para robar sus secretos y debe enfrentar un último trabajo: implantar una idea en la mente de alguien.",
+            "anio": 2010,
+            "director": "Christopher Nolan",
+            "formato": "BLU-RAY",
+            "disponible": true,
+            "generos": [
+                1,
+                3
+            ]
+        }
+    },
+    {
+        "model": "catalogo.pelicula",
+        "pk": 2,
+        "fields": {
+            "titulo": "The Matrix",
+            "descripcion": "Un programador de día y hacker de noche descubre la verdadera naturaleza de su realidad y su papel en la guerra contra sus controladores.",
+            "anio": 1999,
+            "director": "Lana Wachowski, Lilly Wachowski",
+            "formato": "VHS",
+            "disponible": true,
+            "generos": [
+                1,
+                3
+            ]
+        }
+    },
+    {
+        "model": "catalogo.pelicula",
+        "pk": 3,
+        "fields": {
+            "titulo": "Parasite",
+            "descripcion": "Una familia pobre se infiltra poco a poco en la vida de una familia rica, desencadenando consecuencias inesperadas y dramáticas.",
+            "anio": 2019,
+            "director": "Bong Joon-ho",
+            "formato": "BLU-RAY",
+            "disponible": true,
+            "generos": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "catalogo.pelicula",
+        "pk": 4,
+        "fields": {
+            "titulo": "Avengers: Endgame",
+            "descripcion": "Los Vengadores restantes unen fuerzas para revertir las acciones de Thanos y restaurar el equilibrio del universo, culminando una saga épica de héroes.",
+            "anio": 2019,
+            "director": "Anthony Russo, Joe Russo",
+            "formato": "BLU-RAY",
+            "disponible": true,
+            "generos": [
+                1,
+                5,
+                3
+            ]
+        }
+    },
+    {
+        "model": "catalogo.pelicula",
+        "pk": 5,
+        "fields": {
+            "titulo": "The Dark Knight",
+            "descripcion": "Batman enfrenta su mayor desafío cuando el Joker desata el caos en Gotham, poniendo a prueba los límites del héroe y la ciudad.",
+            "anio": 2008,
+            "director": "Christopher Nolan",
+            "formato": "DVD",
+            "disponible": true,
+            "generos": [
+                1,
+                4
+            ]
+        }
+    },
+    {
+        "model": "catalogo.pelicula",
+        "pk": 6,
+        "fields": {
+            "titulo": "Guardians of the Galaxy",
+            "descripcion": "Un grupo de inadaptados espaciales se une para salvar la galaxia, mezclando humor, aventura y mucha acción al ritmo de la música retro.",
+            "anio": 2014,
+            "director": "James Gunn",
+            "formato": "BLU-RAY",
+            "disponible": true,
+            "generos": [
+                1,
+                2,
+                5,
+                3
+            ]
+        }
+    },
+    {
+        "model": "catalogo.pelicula",
+        "pk": 7,
+        "fields": {
+            "titulo": "The Hangover",
+            "descripcion": "Tres amigos se despiertan tras una descontrolada despedida de soltero en Las Vegas sin recordar nada de la noche anterior, y deben reconstruir lo ocurrido para encontrar al novio desaparecido.",
+            "anio": 2009,
+            "director": "Todd Phillips",
+            "formato": "DVD",
+            "disponible": true,
+            "generos": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "catalogo.pelicula",
+        "pk": 8,
+        "fields": {
+            "titulo": "Interstellar",
+            "descripcion": "Un grupo de astronautas viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad, enfrentando desafíos cósmicos y personales.",
+            "anio": 2014,
+            "director": "Christopher Nolan",
+            "formato": "DVD",
+            "disponible": true,
+            "generos": [
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "catalogo.pelicula",
+        "pk": 9,
+        "fields": {
+            "titulo": "El laberinto del fauno",
+            "descripcion": "Durante la posguerra española, una niña descubre un mundo de fantasía oscuro y mágico mientras intenta escapar de la dura realidad que la rodea.",
+            "anio": 2006,
+            "director": "Guillermo del Toro",
+            "formato": "DVD",
+            "disponible": true,
+            "generos": [
+                4,
+                5
+            ]
+        }
+    },
+    {
+        "model": "catalogo.pelicula",
+        "pk": 10,
+        "fields": {
+            "titulo": "Mad Max: Fury Road",
+            "descripcion": "En un futuro postapocalíptico, un guerrero solitario se une a una mujer rebelde para escapar de un tirano, desatando una frenética persecución a toda velocidad por el desierto.",
+            "anio": 2015,
+            "director": "George Miller",
+            "formato": "BLU-RAY",
+            "disponible": true,
+            "generos": [
+                1,
+                5,
+                3
+            ]
+        }
+    }
+]
