@@ -1,0 +1,26 @@
+{% extends 'videoclub/base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <h1 class="text-primary">Estrenos</h1>
+        {% for peli in estrenos %}
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'img/movie.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+                <a href="#" class="badge badge-success">{{ peli.titulo }}</a>
+              <p class="card-text">{{ peli.descripcion }}</p>
+            </div>
+          </div>
+        {% endfor %}
+          <ul>
+            {% for peli in estrenos %}
+            <li>{{ peli.titulo }} ({{ peli.anio }})</li>
+            {% endfor %}
+        
+        </ul>
+    </div>
+
+{% endblock %}

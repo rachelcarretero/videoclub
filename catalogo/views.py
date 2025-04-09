@@ -2,7 +2,9 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Pelicula
 
-
+def estrenos(request):
+    estrenos = Pelicula.objects.filter(anio=2019, disponible = True)
+    return render(request, )
 
 def listado(request):
     todas = Pelicula.objects.all()

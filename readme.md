@@ -6,12 +6,14 @@ django-admin --help -> ayuda comandos
 los nombres de los proyectos no pueden tener guión medio
 ------------------------------------------
 
-// entorno virtual - desde la carpeta que contiene el proyecto
+// entorno virtual
 python3 -m venv ~/.envs/venv ( nombre que sea)
 ls  ~/.envs/ - sca todos
 
 // activar entorno 
-source ~/.envs/venv/bin/activate
+source ~/.envs/venv/bin/activate (para mac)
+python -m venv venv 
+venv\Scripts\Activate.ps1 (para windows)
 (venv) rachelcarretero@Rachels-MacBook-Pro django % 
 
 /// instalar django en entorno
@@ -19,10 +21,11 @@ pip install -django
 
 // para crear la primera app dentro del proyecto, vamos al proyecto
 cd videoclub 
+cd.. (subir una carpeta)
 
 
 //aquí se corre el localhost - página básica.
-python3 manage.py runserver
+python3 manage.py runserver   (ejecutar el proyecto)
  http://127.0.0.1:8000/
 
  // creamos la primera startapp
@@ -64,3 +67,7 @@ update(): Actualiza objetos.
 // create user en /admin
  python3 manage.py createsuperuser
  // admin admin  - admin@admin.es
+
+
+ // biblio de documentacion (guia de )
+ https://www.w3schools.com/html/
