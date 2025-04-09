@@ -1,11 +1,13 @@
-<!-- templates/videoclub/index.html -->
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Inicio Videoclub</title>
-</head>
-<body>
-    <h1>Bienvenida al videoclub 🎬</h1>
-    <p><a href="/catalogo/">Ir al catálogo</a></p>
-</body>
-</html>
+{% extends 'videoclub/base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+
+    <div class="text-center">
+            <h2>Bienvenida al videoclub</h2>
+            <p>Explora el catálogo y alquila tus pelis favoritas</p>
+            <a href="/catalogo/" class="btn btn-danger">Ir al catálogo</a>
+    </div>
+
+{% endblock %}

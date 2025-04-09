@@ -6,7 +6,7 @@ django-admin --help -> ayuda comandos
 los nombres de los proyectos no pueden tener guión medio
 ------------------------------------------
 
-// entorno virtual
+// entorno virtual - desde la carpeta que contiene el proyecto
 python3 -m venv ~/.envs/venv ( nombre que sea)
 ls  ~/.envs/ - sca todos
 
