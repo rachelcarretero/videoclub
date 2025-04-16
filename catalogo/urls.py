@@ -1,9 +1,11 @@
 from django.urls import path
 from . import views
 
+#aqui estas llamando a vistas 
+
 urlpatterns = [
-    path("", views.index, name="index"),  # /catalogo/
-    path("listado/", views.listado, name="listado"),  # /catalogo/listado/
-    path("detalle/<int:id>/", views.detalle, name="detalle"),  # /catalogo/detalle/1/
+    path("", views.getestrenos, name="estrenos"),  # /catalogo/
+    path("listado/", views.getlistado, name="listado"),  # /catalogo/listado/
+    path("detalle/<int:id>/", views.getdetalle, name="detalle"),  # /catalogo/detalle/1/
 ]
 

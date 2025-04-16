@@ -13,6 +13,7 @@ ls  ~/.envs/ - sca todos
 // activar entorno 
 source ~/.envs/venv/bin/activate (para mac)
 python -m venv venv 
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass (poner antes si no funciona)
 venv\Scripts\Activate.ps1 (para windows)
 (venv) rachelcarretero@Rachels-MacBook-Pro django % 
 

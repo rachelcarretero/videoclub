@@ -1,0 +1,16 @@
+{% block content %}
+{% load static %}
+
+    <div class="container">
+        <h1 class="text-primary">Detalle de {{detalle_de_pelicula.titulo}} </h1>
+        
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'img/movie.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+                <label class="badge badge-success">{{ detalle_de_pelicula.titulo }} ({{ detalle_de_pelicula.anio }})</label>
+              <p class="card-text">{{ detalle_de_pelicula.descripcion }}</p>
+            </div>
+          </div>
+    </div>
+
+{% endblock %}

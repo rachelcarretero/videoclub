@@ -10,3 +10,12 @@ a.nav-link:hover {
 h1, h2 {
     font-weight: bold;
 }
+
+.boxestrenos{
+    margin: 10px;
+    float: left;
+    padding: 8px 5px 5px 5px;
+}
+
+.boxestrenos a {font-size: 1.25rem; text-decoration: none;}
+.boxestrenos p {font-size: 0.85rem;}
