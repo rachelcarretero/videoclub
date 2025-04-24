@@ -35,7 +35,10 @@ class Pelicula(models.Model):
     generos = models.ManyToManyField(Genero, related_name='peliculas')
     formato = models.CharField(max_length=10, choices=FORMATO_CHOICES)
     disponible = models.BooleanField(default=True)
+    portada = models.ImageField(upload_to='peliculas/', height_field=None, width_field=None, blank=True, null=True)
     
+    #Con upload_to='peliculas/', las imágenes se guardarán en MEDIA_ROOT/peliculas/.
+
     def __str__(self):
         return self.titulo
 

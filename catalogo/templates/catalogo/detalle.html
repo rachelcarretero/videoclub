@@ -5,7 +5,15 @@
         <h1 class="text-primary">Detalle de {{detalle_de_pelicula.titulo}} </h1>
         
         <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="{% static 'img/movie.jpg' %}" alt="Card image cap">
+        {% if detalle_de_pelicula.portada  %}
+
+          <img class="imagen_detalle" src="{% static 'img/movie.jpg' %}" alt="Card image cap">
+        {% else %}
+          <label> {{detalle_de_pelicula.portada.url}} </label>
+          <img class="imagen_detalle" src="{{detalle_de_pelicula.portada.url}}" alt="detalle_de_pelicula.titulo"> 
+        
+        {% endif %}
+            
             <div class="card-body">
                 <label class="badge badge-success">{{ detalle_de_pelicula.titulo }} ({{ detalle_de_pelicula.anio }})</label>
               <p class="card-text">{{ detalle_de_pelicula.descripcion }}</p>

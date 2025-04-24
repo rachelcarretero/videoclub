@@ -10,7 +10,7 @@ los nombres de los proyectos no pueden tener guión medio
 python3 -m venv ~/.envs/venv ( nombre que sea)
 ls  ~/.envs/ - sca todos
 
-// activar entorno 
+// activar entorno: tiene que ser desde la raiz del proyecto (C:\Users\usuario\Documents\PYTHON\videoclub\videoclub)
 source ~/.envs/venv/bin/activate (para mac)
 python -m venv venv 
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass (poner antes si no funciona)
@@ -36,6 +36,7 @@ python3 manage.py runserver   (ejecutar el proyecto)
 python3 manage.py makemigrations 
 python3 manage.py migrate
 
+//salvar todo: cntrl k s
 
 
 // para ejecutar los modelos como si estuviera corriendo la app, insertar, etc osea como entrar en bd
